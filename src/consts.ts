@@ -23,6 +23,7 @@ export const PROJECTS = [
 		number: '01',
 		name: 'HRPAuth',
 		category: 'Identity & authentication',
+                summary: 'Minecraft authentication and skin management, built for MatchCore.',
 		description:
 			`Minecraft authentication and skin management. An independently built part of MatchCore, with ${HRPAUTH.users} real users and a rapidly evolving Go backend.`,
 		detail: 'Yggdrasil authentication, textures, and a dedicated web interface.',
@@ -33,6 +34,7 @@ export const PROJECTS = [
 		number: '02',
 		name: 'Cascade',
 		category: 'Protocols & infrastructure',
+                summary: 'An edge proxy connecting Rusted Warfare players to game servers.',
 		description:
 			'An edge reverse proxy for Rusted Warfare. Routes players to independent backends and connects game traffic with HRPAuth authentication.',
 		detail: 'Room-code routing, native protocol forwarding, and mTLS.',
@@ -43,6 +45,7 @@ export const PROJECTS = [
 		number: '03',
 		name: 'Silo40',
 		category: 'Games & experiments',
+                summary: 'A strategy game exploring survival and evolving ideologies in the world of Wool.',
 		description:
 			'A strategy game set in the world of Wool. Exploring survival, evolving ideologies, and different paths for a civilization underground.',
 		detail: 'Game logic in the frontend; a Go backend for persistence.',
