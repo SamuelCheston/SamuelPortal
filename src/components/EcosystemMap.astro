@@ -1,0 +1,52 @@
+---
+import { HRPAUTH } from '../consts';
+---
+
+<aside class="ecosystem-map" aria-labelledby="ecosystem-title">
+	<div class="map-topline">
+		<span class="eyebrow">Inside the ecosystem</span>
+		<span class="map-symbol" aria-hidden="true">[ M ]</span>
+	</div>
+	<h3 id="ecosystem-title">One idea.<br />A system around it.</h3>
+	<p class="map-intro">MatchCore started with a goal: ELO-MMR matchmaking in Minecraft.</p>
+	<div class="map-root">
+		<span class="eyebrow">The original goal</span>
+		<strong>Matchmaking / ELO-MMR</strong>
+		<span>Minecraft</span>
+	</div>
+	<div class="map-connector" aria-hidden="true"></div>
+	<div class="map-branch-label eyebrow">Building the supporting ecosystem</div>
+	<div class="map-nodes">
+		<details class="map-node" open>
+			<summary>
+				<span><span class="node-index">01</span> HRPAuth</span>
+				<span class="node-toggle" aria-hidden="true"></span>
+			</summary>
+			<div class="node-content">
+				<p>Player identity, Minecraft authentication, and skin management.</p>
+				<a href={HRPAUTH.url}>Explore the source <span aria-hidden="true">&nearr;</span></a>
+			</div>
+		</details>
+		<details class="map-node">
+			<summary>
+				<span><span class="node-index">02</span> Web interface</span>
+				<span class="node-toggle" aria-hidden="true"></span>
+			</summary>
+			<div class="node-content">
+				<p>A dedicated MUI frontend for HRPAuth, built with TypeScript.</p>
+				<a href={HRPAUTH.frontend}>Explore the frontend <span aria-hidden="true">&nearr;</span></a>
+			</div>
+		</details>
+		<details class="map-node">
+			<summary>
+				<span><span class="node-index">03</span> Ecosystem bridges</span>
+				<span class="node-toggle" aria-hidden="true"></span>
+			</summary>
+			<div class="node-content">
+				<p>Protocol adapters, skin services, and migration tools connect HRPAuth to the wider Minecraft ecosystem.</p>
+				<a href="https://github.com/CoreMatch/BS2HA">Explore the migration tool <span aria-hidden="true">&nearr;</span></a>
+			</div>
+		</details>
+	</div>
+	<p class="map-caption">A map of the idea, not a deployment diagram. Expand a layer to explore.</p>
+</aside>

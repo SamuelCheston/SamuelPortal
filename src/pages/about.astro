@@ -2,18 +2,93 @@
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import { HRPAUTH, PROFILE, SITE_TITLE } from '../consts';
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title="About Me" description="Lorem ipsum dolor sit amet" />
+		<BaseHead
+			title={`About | ${SITE_TITLE}`}
+			description="I'm Samuel Cheston, the independent developer behind MatchCore, HRPAuth, Cascade, and Silo40. Here's the idea that started the work."
+		/>
 	</head>
 	<body>
 		<Header />
-		<main>
-			<h1>About Me</h1>
-			<p>Lorem ipsum dolor sit amet</p>
+		<main id="main" class="shell about-main">
+			<a class="text-link back-link" href="/"><span aria-hidden="true">&larr;</span> Back to the work</a>
+			<div class="about-heading">
+				<p class="eyebrow">About / Samuel Cheston</p>
+				<h1>One developer.<br /><span class="accent-text">The whole picture.</span></h1>
+				<p class="hero-description">I build across the stack because the things I want to make don't stop at one layer.</p>
+			</div>
+			<div class="about-grid">
+				<aside class="about-facts" aria-label="At a glance">
+					<dl>
+						<div><dt>Who</dt><dd>Samuel Cheston</dd></div>
+						<div><dt>How I work</dt><dd>Independent developer</dd></div>
+						<div><dt>Main focus</dt><dd>MatchCore ecosystem</dd></div>
+						<div><dt>Currently</dt><dd>Rapid iteration on HRPAuth</dd></div>
+					</dl>
+					<a class="text-link" href={PROFILE.github}>GitHub profile <span aria-hidden="true">&nearr;</span></a>
+				</aside>
+				<div class="about-story">
+					<section aria-labelledby="starting-point">
+						<p class="eyebrow">The starting point</p>
+						<h2 id="starting-point">It began with matchmaking.</h2>
+						<p>
+							MatchCore started with an idea: bring ELO-MMR matchmaking to Minecraft.
+							That remains the original goal behind an ecosystem that now includes
+							authentication, web interfaces, and tools that connect to the game.
+						</p>
+						<p>
+							I independently develop these projects, from the underlying services
+							to the interfaces around them. HRPAuth is one part of that larger effort,
+							not the whole story.
+						</p>
+					</section>
+					<section aria-labelledby="foundation">
+						<p class="eyebrow">An engineering choice</p>
+						<h2 id="foundation">Build the foundation you need.</h2>
+						<p>
+							There was already a mature option for Minecraft authentication and skins:
+							Blessing Skin. For my plans, though, I felt its technology choices constrained
+							how far I could take the system.
+						</p>
+						<p>
+							I chose to build a new foundation. HRPAuth is my approach to authentication
+							and skin management within MatchCore, with a Go backend and a dedicated
+							web frontend. It has {HRPAUTH.users} real users and is still evolving rapidly.
+						</p>
+						<a class="text-link" href={HRPAUTH.url}>Read the HRPAuth source <span aria-hidden="true">&nearr;</span></a>
+					</section>
+					<section aria-labelledby="beyond">
+						<p class="eyebrow">Other parts of the work</p>
+						<h2 id="beyond">From network protocols to game systems.</h2>
+						<p>
+							Cascade explores the infrastructure side: a Rusted Warfare edge proxy,
+							routing players to independent backends and integrating HRPAuth authentication.
+						</p>
+						<p>
+							Silo40 explores a different kind of system: a strategy game set in the world
+							of Wool, with survival, ideology, and multiple paths for civilization.
+							I independently develop both projects.
+						</p>
+					</section>
+					<section aria-labelledby="now">
+						<p class="eyebrow">Now</p>
+						<h2 id="now">Still building MatchCore.</h2>
+						<p>
+							My focus is still on these projects, especially the ongoing iteration
+							of HRPAuth and the ecosystem around it.
+						</p>
+						<div class="about-actions">
+							<a class="button button-dark" href={PROFILE.ecosystem}>Explore MatchCore <span aria-hidden="true">&nearr;</span></a>
+							<a class="text-link" href="/#connect">Connect <span aria-hidden="true">&rarr;</span></a>
+						</div>
+					</section>
+				</div>
+			</div>
 		</main>
 		<Footer />
 	</body>
