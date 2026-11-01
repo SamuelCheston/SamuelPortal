@@ -1,7 +1,6 @@
 ---
 import { PROFILE } from '../consts';
 
-const isHome = Astro.url.pathname === '/';
 const isAbout = Astro.url.pathname.replace(/\/$/, '') === '/about';
 ---
 
@@ -13,11 +12,9 @@ const isAbout = Astro.url.pathname.replace(/\/$/, '') === '/about';
 			<span>Samuel Cheston</span>
 		</a>
 		<nav aria-label="Main navigation">
-			<a href={isHome ? '#build' : '/#build'}>Build</a>
-			<a href={isHome ? '#think' : '/#think'}>Think</a>
 			<a href="/about" aria-current={isAbout ? 'page' : undefined}>About</a>
-			<a class="nav-contact" href={isHome ? '#connect' : '/#connect'}>
-				Connect <span aria-hidden="true">&nearr;</span>
+                        <a class="nav-contact" href={PROFILE.github}>
+                                GitHub <span aria-hidden="true">&nearr;</span>
 			</a>
 		</nav>
 	</div>
