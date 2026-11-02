@@ -72,7 +72,6 @@ em { font-family: Georgia, serif; font-weight: 400; }
 .hero h1 { max-width: 1000px; font-size: clamp(67px, 8vw, 118px); line-height: .97; letter-spacing: -.065em; }
 .hero h1 em, .work-heading h2 em, .approach-inner h2 em, .connect-grid h2 em, .directory h1 em, .about-heading h1 em { color: var(--accent); letter-spacing: -.06em; }
 .hero-intro { padding-bottom: 5px; }
-.hero-symbol { display: block; font-size: var(--text-heading); color: var(--accent); line-height: 1; margin-bottom: 22px; }
 .hero-intro p { color: #555e53; line-height: 1.55; }
 .arrow-link { display: inline-flex; align-items: center; gap: 36px; margin-top: 22px; padding-bottom: 8px; border-bottom: 1px solid currentColor; font-size: var(--text-body); font-weight: 700; text-decoration: none; }
 
@@ -145,7 +144,6 @@ em { font-family: Georgia, serif; font-weight: 400; }
 	.hero-layout { grid-template-columns: 1fr; gap: 30px; padding: 60px 0 50px; }
 	.hero h1 { font-size: clamp(53px, 10vw, 76px); }
 	.hero-intro { max-width: 360px; }
-	.hero-symbol { margin-bottom: 12px; }
 	.work-heading { align-items: start; flex-direction: column; gap: 16px; }
 	.all-work-link { flex-direction: column; }
 	.work-section { padding-bottom: 50px; }
