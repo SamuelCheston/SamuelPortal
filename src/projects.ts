@@ -90,7 +90,7 @@ export const projectGroups: ProjectGroup[] = [
                 name: 'Others',
                 introduction: 'Smaller experiments and tools, and the sites that hold this work together.',
                 projects: [
-                        { name: 'Minivisor', description: 'A lightweight web control panel for scripts and daemon processes.', url: 'https://github.com/SamuelCheston/Minivisor' },
+                        { name: 'Tinyvisor', description: 'A lightweight control panel for scripts and daemon processes.', url: 'https://github.com/SamuelCheston/Tinyvisor' },
                         { name: 'AccessibilitiesCore', description: 'An initial service foundation for accessibility capabilities.', url: 'https://github.com/SamuelCheston/AccessibilitiesCore' },
                         { name: 'SamuelPortal', description: 'This personal portal and portfolio.', url: 'https://github.com/SamuelCheston/SamuelPortal' },
                         { name: 'SamuelWiki', description: 'A bilingual knowledge base covering architecture, deployment, and the content model.', url: 'https://github.com/SamuelCheston/SamuelWiki' },
