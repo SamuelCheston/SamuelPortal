@@ -3,6 +3,8 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { PROFILE, SITE_TITLE } from '../consts';
+import { Image } from 'astro:assets';
+import portrait from '../assets/me.png';
 ---
 
 <!doctype html>
@@ -24,6 +26,17 @@ import { PROFILE, SITE_TITLE } from '../consts';
 			</div>
 			<div class="about-grid">
 				<aside class="about-facts" aria-label="At a glance">
+					<Image
+						class="about-portrait"
+						src={portrait}
+						alt="Portrait of Samuel Cheston"
+						width={96}
+						height={96}
+						widths={[96, 192]}
+						sizes="96px"
+						format="webp"
+						fit="cover"
+					/>
 					<dl>
 						<div><dt>Who</dt><dd>Samuel Cheston</dd></div>
 						<div><dt>How I work</dt><dd>Independent developer</dd></div>
