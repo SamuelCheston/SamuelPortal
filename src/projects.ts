@@ -13,7 +13,6 @@ type ProjectSeries = {
 
 type ProjectGroup = {
         id: string;
-        number: string;
         name: string;
         introduction: string;
         projects: Project[];
@@ -23,7 +22,6 @@ type ProjectGroup = {
 export const projectGroups: ProjectGroup[] = [
         {
                 id: 'matchcore',
-                number: '01',
                 name: 'MatchCore Series',
                 introduction: 'A connected ecosystem for authentication, matchmaking, and the services around them.',
                 projects: [
@@ -72,7 +70,6 @@ export const projectGroups: ProjectGroup[] = [
         },
         {
                 id: 'silo40',
-                number: '02',
                 name: 'Silo40 Series',
                 introduction: 'A configurable simulation of organizations, roles, and events.',
                 projects: [
@@ -81,7 +78,6 @@ export const projectGroups: ProjectGroup[] = [
         },
         {
                 id: 'martial-art-school',
-                number: '03',
                 name: 'MartialArt School Series',
                 introduction: 'A martial arts world built on the Silo40 simulation foundation.',
                 projects: [
@@ -90,7 +86,6 @@ export const projectGroups: ProjectGroup[] = [
         },
         {
                 id: 'others',
-                number: '04',
                 name: 'Others',
                 introduction: 'More experiments, tools, and places that bring the work together.',
                 projects: [

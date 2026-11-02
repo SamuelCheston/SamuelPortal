@@ -16,7 +16,7 @@ import { PROFILE, SITE_DESCRIPTION, SITE_TITLE } from '../consts';
                         <section class="hero shell" aria-labelledby="hero-title">
                                 <div class="hero-layout">
                                         <div>
-                                                <p class="eyebrow hero-hello">Hello, I'm Samuel.</p>
+                                                <p class="hero-hello">Hello, I'm Samuel.</p>
                                                 <h1 id="hero-title">Making things<br />work <em>together.</em></h1>
                                         </div>
                                         <div class="hero-intro">
@@ -28,10 +28,9 @@ import { PROFILE, SITE_DESCRIPTION, SITE_TITLE } from '../consts';
                         </section>
 
                         <section id="featured" class="featured-section shell" aria-labelledby="featured-title">
-                                <div class="section-heading"><p class="eyebrow"><span>01 /</span> Featured ecosystem</p><p class="section-aside">Identity, with room to grow.</p></div>
                                 <div class="featured-project">
                                         <div class="featured-copy">
-                                                <div class="feature-label"><span class="feature-dot"></span> Identity &amp; infrastructure <span class="feature-index">01 — 04</span></div>
+                                                <div class="feature-label"><span class="feature-dot"></span> Identity &amp; infrastructure</div>
                                                 <h2 id="featured-title">HRPAuth<span>.</span></h2>
                                                 <p class="feature-lead">One identity. A whole ecosystem.</p>
                                                 <p>Built to connect accounts, games, and services, HRPAuth brings authentication and extensible infrastructure together under one roof.</p>
@@ -42,39 +41,38 @@ import { PROFILE, SITE_DESCRIPTION, SITE_TITLE } from '../consts';
                                                 <div class="system-notes">
                                                         <p class="system-lead">One identity, wired through every surface a player touches.</p>
                                                         <ul class="system-list">
-                                                                <li><span>01</span>Web UI</li>
-                                                                <li><span>02</span>Game clients</li>
-                                                                <li><span>03</span>Services</li>
-                                                                <li><span>04</span>Skins &amp; profiles</li>
+                                                                <li>Web UI</li>
+                                                                <li>Game clients</li>
+                                                                <li>Services</li>
+                                                                <li>Skins &amp; profiles</li>
                                                         </ul>
                                                 </div>
                                         </div>
                                 </div>
                                 <div class="feature-details">
-                                        <div><span>01 / THE IDEA</span><p>A shared identity foundation for games and the services around them.</p></div>
-                                        <div><span>02 / THE APPROACH</span><p>OAuth2 and multi-factor authentication meet service discovery and dynamic routing.</p></div>
-                                        <div><span>03 / THE CONNECTION</span><p>Satellite services can contribute frontend capabilities through distributed SDK packages.</p></div>
+                                        <div><p class="label">The idea</p><p>A shared identity foundation for games and the services around them.</p></div>
+                                        <div><p class="label">The approach</p><p>OAuth2 and multi-factor authentication meet service discovery and dynamic routing.</p></div>
+                                        <div><p class="label">The connection</p><p>Satellite services can contribute frontend capabilities through distributed SDK packages.</p></div>
                                 </div>
                         </section>
 
                         <section id="work" class="work-section shell" aria-labelledby="work-title">
-                                <div class="section-heading"><p class="eyebrow"><span>02 /</span> Selected work</p><a class="section-link" href="/projects">All projects <span aria-hidden="true">↗</span></a></div>
                                 <div class="work-heading"><h2 id="work-title">Different ideas.<br /><em>Connected thinking.</em></h2><p>From game servers to simulation engines, each project starts with a problem worth exploring.</p></div>
                                 <div class="work-grid">
-                                        <article class="work-card"><div class="card-meta"><span>01 / COMPETITIVE GAMING</span><span aria-hidden="true">↗</span></div><div class="card-art art-rating" aria-hidden="true"><span>ΔR</span><i>=</i><span>K × (S − E)</span></div><div class="card-body"><h3><a href="/projects#matchcore-arena">MatchCore Arena</a></h3><p>Turning match results into meaningful player ratings, from game-side reporting to the leaderboard.</p><div class="card-tags">GO &nbsp; / &nbsp; ELO &nbsp; / &nbsp; WAILS</div></div></article>
-                                        <article class="work-card"><div class="card-meta"><span>02 / GAME INFRASTRUCTURE</span><span aria-hidden="true">↗</span></div><div class="card-art art-network" aria-hidden="true"><div class="network-line"></div><span class="network-point point-one"></span><span class="network-point point-two"></span><span class="network-point point-three"></span></div><div class="card-body"><h3><a href="/projects#matchcore-arena">RW-HPS / Go Server</a></h3><p>Exploring a Go-based networking and orchestration layer for Rusted Warfare, with the game kernel kept external.</p><div class="card-tags">GO &nbsp; / &nbsp; NETWORKING &nbsp; / &nbsp; PROTOCOLS</div></div></article>
-                                        <article class="work-card"><div class="card-meta"><span>03 / SIMULATION</span><span aria-hidden="true">↗</span></div><div class="card-art art-simulation" aria-hidden="true"><div class="sim-grid"><span></span><span></span><span></span><span></span></div></div><div class="card-body"><h3><a href="/projects#silo40">Silo40</a></h3><p>A configurable organization simulation where roles, traits, and events shape the state of a world.</p><div class="card-tags">GO &nbsp; / &nbsp; RULES ENGINE &nbsp; / &nbsp; SIMULATION</div></div></article>
+                                        <article class="work-card"><div class="card-meta">Competitive gaming</div><div class="card-art art-rating" aria-hidden="true"><span>ΔR</span><i>=</i><span>K × (S − E)</span></div><div class="card-body"><h3><a href="/projects#matchcore-arena">MatchCore Arena</a></h3><p>Turning match results into meaningful player ratings, from game-side reporting to the leaderboard.</p><div class="card-tags">Go / ELO / Wails</div></div></article>
+                                        <article class="work-card"><div class="card-meta">Game infrastructure</div><div class="card-art art-network" aria-hidden="true"><div class="network-line"></div><span class="network-point point-one"></span><span class="network-point point-two"></span><span class="network-point point-three"></span></div><div class="card-body"><h3><a href="/projects#matchcore-arena">RW-HPS / Go Server</a></h3><p>Exploring a Go-based networking and orchestration layer for Rusted Warfare, with the game kernel kept external.</p><div class="card-tags">Go / Networking / Protocols</div></div></article>
+                                        <article class="work-card"><div class="card-meta">Simulation</div><div class="card-art art-simulation" aria-hidden="true"><div class="sim-grid"><span></span><span></span><span></span><span></span></div></div><div class="card-body"><h3><a href="/projects#silo40">Silo40</a></h3><p>A configurable organization simulation where roles, traits, and events shape the state of a world.</p><div class="card-tags">Go / Rules engine / Simulation</div></div></article>
                                 </div>
                                 <a class="all-work-link" href="/projects"><span>There is more to the story.</span><strong>Explore the project directory <span aria-hidden="true">↗</span></strong></a>
                         </section>
 
                         <section class="approach-section" aria-labelledby="approach-title"><div class="shell approach-inner">
-                                <div><p class="eyebrow"><span>03 /</span> The approach</p><h2 id="approach-title">Build the pieces.<br /><em>Connect the dots.</em></h2></div>
+                                <div><h2 id="approach-title">Build the pieces.<br /><em>Connect the dots.</em></h2></div>
                                 <div class="approach-copy"><p>I like understanding how things fit together: the protocol a client speaks, the service behind it, and the interface that makes it useful.</p><p>These projects are independently developed, with upstream work and reused foundations acknowledged where they belong.</p><a class="arrow-link" href="/about">A little more about me <span aria-hidden="true">↗</span></a></div>
                         </div></section>
 
                         <section id="connect" class="connect-section shell" aria-labelledby="connect-title">
-                                <p class="eyebrow"><span>04 /</span> Find me online</p><div class="connect-grid"><h2 id="connect-title">Let's make<br /><em>something connect.</em></h2><div><p>Curious about the projects, the code, or the ideas behind them? Find me on GitHub.</p><a class="button button-dark" href={PROFILE.github}>Find Samuel on GitHub <span aria-hidden="true">↗</span></a></div></div>
+                                <div class="connect-grid"><h2 id="connect-title">Let's make<br /><em>something connect.</em></h2><div><p>Curious about the projects, the code, or the ideas behind them? Find me on GitHub.</p><a class="button button-dark" href={PROFILE.github}>Find Samuel on GitHub <span aria-hidden="true">↗</span></a></div></div>
                         </section>
                 </main>
 		<Footer />
