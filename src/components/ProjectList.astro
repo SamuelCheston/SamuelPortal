@@ -1,0 +1,21 @@
+---
+import type { Project } from '../projects';
+
+interface Props {
+        projects: Project[];
+        nested?: boolean;
+}
+
+const { projects, nested = false } = Astro.props;
+const Heading = nested ? 'h4' : 'h3';
+---
+
+<div class="directory-list">
+        {projects.map((project) => (
+                <article class="directory-item">
+                        <Heading>{project.name}</Heading>
+                        <p>{project.description}</p>
+                        {project.url && <a href={project.url} aria-label={`View ${project.name} source`}>Source ↗</a>}
+                </article>
+        ))}
+</div>

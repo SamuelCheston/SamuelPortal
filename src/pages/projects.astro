@@ -1,0 +1,48 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import ProjectList from '../components/ProjectList.astro';
+import { SITE_TITLE } from '../consts';
+import { projectGroups } from '../projects';
+---
+
+<!doctype html>
+<html lang="en">
+        <head>
+                <BaseHead title={`Projects | ${SITE_TITLE}`} description="Explore Samuel Cheston's independently developed projects across authentication, infrastructure, games, and tools." />
+        </head>
+        <body>
+                <Header />
+                <main id="main" class="shell directory">
+                        <a class="back-link" href="/">← Back to the portfolio</a>
+                        <div class="directory-intro">
+                                <p class="eyebrow"><span>THE INDEX /</span> Projects &amp; experiments</p>
+                                <h1>A closer look at<br /><em>what I build.</em></h1>
+                                <p>A collection of connected systems, individual tools, and experiments. Descriptions reflect capabilities expressed in the source, not a guarantee of deployment or completion.</p>
+                        </div>
+                        <nav class="directory-nav" aria-label="Project categories">
+                                {projectGroups.map((group) => <a href={`#${group.id}`}><span>{group.number}</span>{group.name} <span aria-hidden="true">↓</span></a>)}
+                        </nav>
+                        {projectGroups.map((group) => (
+                                <section class="directory-group" id={group.id} aria-labelledby={`title-${group.id}`}>
+                                        <div class="directory-group-heading">
+                                                <p class="eyebrow"><span>{group.number} /</span> PROJECTS</p>
+                                                <div><h2 id={`title-${group.id}`}>{group.name}</h2><p>{group.introduction}</p></div>
+                                        </div>
+                                        {group.projects.length > 0 && <ProjectList projects={group.projects} />}
+                                        {group.series?.map((series) => (
+                                                <section class="directory-series" id={series.id} aria-labelledby={`title-${series.id}`}>
+                                                        <div class="directory-series-heading">
+                                                                <h3 id={`title-${series.id}`}>{series.name}</h3>
+                                                                <p>{series.introduction}</p>
+                                                        </div>
+                                                        <ProjectList projects={series.projects} nested />
+                                                </section>
+                                        ))}
+                                </section>
+                        ))}
+                </main>
+                <Footer />
+        </body>
+</html>
