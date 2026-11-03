@@ -27,22 +27,19 @@ export const projectGroups: ProjectGroup[] = [
                 projects: [],
                 series: [
                         {
-                                id: 'hrpauth',
-                                name: 'HRPAuth',
-                                introduction: 'Authentication, identity, and the supporting services around the platform.',
+                                id: 'minecraft',
+                                name: 'Minecraft',
+                                introduction: 'Everything built for Minecraft clients and servers: Yggdrasil authentication, skins, identity binding, and the launcher.',
                                 projects: [
-                                        { name: 'HRPAuth', description: 'The Go authentication core of the ecosystem: OAuth2, second factors (WebAuthn, TOTP, email), and a gateway for connected services.', url: 'https://github.com/CoreMatch/HRPAuth' },
                                         { name: 'HRPAuth-Yggdrasil-API', description: 'A Yggdrasil-compatible authentication, session, and profile service for Minecraft clients, running as its own microservice.', url: 'https://github.com/CoreMatch/HRPAuth-Yggdrasil-API' },
-                                        { name: 'HRPAuth-WebUI', description: 'A React interface for login, account management, and second-factor setup, and the shell where ecosystem services mount their pages.', url: 'https://github.com/CoreMatch/HRPAuth-WebUI' },
-                                        { name: 'HA-WebUI-SDKHandler', description: 'Collects service SDKs and builds their extensions into the main web interface.', url: 'https://github.com/CoreMatch/HA-WebUI-SDKHandler' },
                                         { name: 'WinnerProxy', description: 'A proxy that routes Yggdrasil requests to Mojang or to HRPAuth, depending on where each account lives.', url: 'https://github.com/CoreMatch/WinnerProxy' },
                                         { name: 'HASkinLib', description: 'A texture upload, storage, and preview service that delegates user checks to the HRPAuth core.', url: 'https://github.com/CoreMatch/HASkinLib' },
                                         { name: 'HASkinProxy', description: 'A skin proxy connecting custom skin layers to Yggdrasil profiles.', url: 'https://github.com/CoreMatch/HASkinProxy' },
+                                        { name: 'HRPAuth-Spigot', description: 'A Velocity plugin that binds in-game identities to platform accounts.', url: 'https://github.com/CoreMatch/HRPAuth-Spigot' },
                                         { name: 'BS2HA', description: 'An offline migration tool for moving BlessingSkin data into HRPAuth.', url: 'https://github.com/CoreMatch/BS2HA' },
                                         { name: 'PHP-zggdrasil-mock', description: 'A mock implementation for testing Yggdrasil integrations.', url: 'https://github.com/CoreMatch/PHP-zggdrasil-mock' },
                                         { name: 'PHP-yggdrasil-api-debugger', description: 'A visual workbench for issuing and inspecting Yggdrasil protocol requests.', url: 'https://github.com/CoreMatch/PHP-yggdrasil-api-debugger' },
-                                        { name: 'HRPAuth-Backend-PHP', description: 'The archived PHP backend: a shared MVC skeleton with the Yggdrasil module, one codebase with HRPAuth-Legacy.', url: 'https://github.com/CoreMatch/HRPAuth-Backend-PHP' },
-                                        { name: 'HRPAuth-Legacy', description: 'The archived PHP umbrella repository, originally published under the HRPAuth name.', url: 'https://github.com/CoreMatch/HRPAuth-Legacy' },
+                                        { name: 'SamuelClient', description: 'A Minecraft launcher with resource downloads and authlib-injector support for self-hosted authentication.', url: 'https://github.com/CoreMatch/SamuelClient' },
                                 ],
                         },
                         {
@@ -52,6 +49,18 @@ export const projectGroups: ProjectGroup[] = [
                                 projects: [
                                         { name: 'RW-HPS', description: 'A Go networking and orchestration layer for Rusted Warfare, built on the RW-HPS fork with the game kernel kept external.', url: 'https://github.com/SamuelCheston/RW-HPS' },
                                         { name: 'Cascade', description: 'An edge reverse proxy for Rusted Warfare group servers, routing clients to backends by room code with HRPAuth authentication.', url: 'https://github.com/CoreMatch/Cascade' },
+                                ],
+                        },
+                        {
+                                id: 'hrpauth',
+                                name: 'HRPAuth',
+                                introduction: 'Game-agnostic identity infrastructure: the authentication core and its web interface.',
+                                projects: [
+                                        { name: 'HRPAuth', description: 'The Go authentication core of the ecosystem: OAuth2, second factors (WebAuthn, TOTP, email), and a gateway for connected services.', url: 'https://github.com/CoreMatch/HRPAuth' },
+                                        { name: 'HRPAuth-WebUI', description: 'A React interface for login, account management, and second-factor setup, and the shell where ecosystem services mount their pages.', url: 'https://github.com/CoreMatch/HRPAuth-WebUI' },
+                                        { name: 'HA-WebUI-SDKHandler', description: 'Collects service SDKs and builds their extensions into the main web interface.', url: 'https://github.com/CoreMatch/HA-WebUI-SDKHandler' },
+                                        { name: 'HRPAuth-Backend-PHP', description: 'The archived PHP backend: a shared MVC skeleton with the Yggdrasil module, one codebase with HRPAuth-Legacy.', url: 'https://github.com/CoreMatch/HRPAuth-Backend-PHP' },
+                                        { name: 'HRPAuth-Legacy', description: 'The archived PHP umbrella repository, originally published under the HRPAuth name.', url: 'https://github.com/CoreMatch/HRPAuth-Legacy' },
                                 ],
                         },
                         {
@@ -72,15 +81,6 @@ export const projectGroups: ProjectGroup[] = [
                                         { name: 'HA-Services-Deployer', description: 'A manifest-driven deployment service for the HA ecosystem.', url: 'https://github.com/CoreMatch/HA-Services-Deployer' },
                                         { name: 'HA-Services-MaintenanceView', description: 'An operations interface for bootstrapping and deploying services.', url: 'https://github.com/CoreMatch/HA-Services-MaintenanceView' },
                                         { name: 'MatchCoreArena-MaintenanceView', description: 'A desktop operations tool with a rating simulator and data management.', url: 'https://github.com/CoreMatch/MatchCoreArena-MaintenanceView' },
-                                ],
-                        },
-                        {
-                                id: 'minecraft',
-                                name: 'Minecraft',
-                                introduction: 'The Minecraft side of the ecosystem: identity binding on server proxies and the desktop launcher.',
-                                projects: [
-                                        { name: 'HRPAuth-Spigot', description: 'A Velocity plugin that binds in-game identities to platform accounts.', url: 'https://github.com/CoreMatch/HRPAuth-Spigot' },
-                                        { name: 'SamuelClient', description: 'A Minecraft launcher with resource downloads and authlib-injector support for self-hosted authentication.', url: 'https://github.com/CoreMatch/SamuelClient' },
                                 ],
                         },
                 ],
