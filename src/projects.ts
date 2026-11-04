@@ -51,7 +51,6 @@ export const projectGroups: ProjectGroup[] = [
                                         { name: 'HRPAuth-Spigot', description: 'A Velocity plugin that binds in-game identities to platform accounts.', url: 'https://github.com/CoreMatch/HRPAuth-Spigot' },
                                         { name: 'PHP-zggdrasil-mock', description: 'A mock implementation for testing Yggdrasil integrations.', url: 'https://github.com/CoreMatch/PHP-zggdrasil-mock' },
                                         { name: 'PHP-yggdrasil-api-debugger', description: 'A visual workbench for issuing and inspecting Yggdrasil protocol requests.', url: 'https://github.com/CoreMatch/PHP-yggdrasil-api-debugger' },
-                                        { name: 'FXPVP', description: 'An archived, deprecated Minecraft launcher whose README points users to a successor project.', url: 'https://github.com/SamuelCheston/FXPVP' },
                                 ],
                         },
                         {
@@ -102,9 +101,6 @@ export const projectGroups: ProjectGroup[] = [
                         { name: 'Sexual-Repression-Calculator', description: 'A fork of a psychology-scale-based self-assessment tool that runs entirely in the browser.', url: 'https://github.com/SamuelCheston/Sexual-Repression-Calculator' },
                         { name: 'GoFish-CaliforniaVersion', description: 'A California-variant take on the Go Fish card game, not yet started.', url: 'https://github.com/SamuelCheston/GoFish-CaliforniaVersion' },
                         { name: 'GfCv-Contract', description: 'A contract repository for GoFish-CaliforniaVersion (GfCv), currently a placeholder.', url: 'https://github.com/SamuelCheston/GfCv-Contract' },
-                        { name: 'SID', description: 'A PHP authentication system for the author\'s own services.', url: 'https://github.com/SamuelCheston/SID' },
-                        { name: 'csn', description: 'A collection of basic programming course materials.', url: 'https://github.com/SamuelCheston/csn' },
-                        { name: 'javaassignments', description: 'A collection of Java course assignments, including a Connect Four implementation.', url: 'https://github.com/SamuelCheston/javaassignments' },
                 ],
         },
         {
