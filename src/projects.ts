@@ -52,7 +52,6 @@ export const projectGroups: ProjectGroup[] = [
                                         { name: 'PHP-zggdrasil-mock', description: 'A mock implementation for testing Yggdrasil integrations.', url: 'https://github.com/CoreMatch/PHP-zggdrasil-mock' },
                                         { name: 'PHP-yggdrasil-api-debugger', description: 'A visual workbench for issuing and inspecting Yggdrasil protocol requests.', url: 'https://github.com/CoreMatch/PHP-yggdrasil-api-debugger' },
                                         { name: 'FXPVP', description: 'An archived, deprecated Minecraft launcher whose README points users to a successor project.', url: 'https://github.com/SamuelCheston/FXPVP' },
-                                        { name: 'BWSBA-MCA', description: 'A fork of BedwarsScoreBoardAddon, a scoreboard add-on plugin that extends BedwarsRel.', url: 'https://github.com/CoreMatch/BWSBA-MCA' },
                                 ],
                         },
                         {
