@@ -99,8 +99,7 @@ export const projectGroups: ProjectGroup[] = [
                         { name: 'HRPAuth-Wiki', description: 'Bilingual documentation for the authentication ecosystem.', url: 'https://github.com/CoreMatch/HRPAuth-Wiki' },
                         { name: 'AccessibilitiesCore', description: 'An archived Gin service skeleton for accessibility capabilities.', url: 'https://github.com/SamuelCheston/AccessibilitiesCore' },
                         { name: 'Sexual-Repression-Calculator', description: 'A fork of a psychology-scale-based self-assessment tool that runs entirely in the browser.', url: 'https://github.com/SamuelCheston/Sexual-Repression-Calculator' },
-                        { name: 'GoFish-CaliforniaVersion', description: 'A California-variant take on the Go Fish card game, not yet started.', url: 'https://github.com/SamuelCheston/GoFish-CaliforniaVersion' },
-                        { name: 'GfCv-Contract', description: 'A contract repository for GoFish-CaliforniaVersion (GfCv), currently a placeholder.', url: 'https://github.com/SamuelCheston/GfCv-Contract' },
+                        { name: 'GfCv-Contract', description: 'A contract repository for the GoFish California-variant card game (GfCv), currently a placeholder.', url: 'https://github.com/SamuelCheston/GfCv-Contract' },
                 ],
         },
         {
