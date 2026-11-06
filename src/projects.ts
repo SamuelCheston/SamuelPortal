@@ -58,16 +58,17 @@ export const projectGroups: ProjectGroup[] = [
                                 name: 'Rusted Warfare',
                                 introduction: 'Server-side infrastructure for Rusted Warfare: networking, orchestration, and edge routing.',
                                 projects: [
+                                        { name: 'Avalon', description: 'A Go game server for Rusted Warfare: gateway, rooms, players, and protocol handling, with game simulation in an external Java helper.', url: 'https://github.com/CoreMatch/Avalon' },
+                                        { name: 'RW-HPS', description: 'The Java engine shell and game data that Avalon runs on — a backup fork of the deleted RW-HPS upstream.', url: 'https://github.com/SamuelCheston/RW-HPS' },
                                         { name: 'Cascade', description: 'An edge reverse proxy for Rusted Warfare group servers, routing clients to backends by room code with HRPAuth authentication.', url: 'https://github.com/CoreMatch/Cascade' },
-                                        { name: 'RW-HPS', description: 'A Go networking and orchestration layer for Rusted Warfare, built on the RW-HPS fork with the game kernel kept external.', url: 'https://github.com/SamuelCheston/RW-HPS' },
                                 ],
                         },
                         {
                                 id: 'matchmaking',
                                 name: 'Matchmaking',
-                                introduction: 'Match results, Elo ratings, and rankings, from game-side reporting to player-facing views.',
+                                introduction: 'Match queues, results, Elo ratings, and rankings, from game-side reporting to player-facing views.',
                                 projects: [
-                                        { name: 'MatchCoreArena-Server', description: 'Match reporting, participant records, rankings, and a weighted Elo rating engine, authenticating through HRPAuth.', url: 'https://github.com/CoreMatch/MatchCoreArena-Server' },
+                                        { name: 'MatchCoreArena-Server', description: 'Match reporting, party matchmaking, participant records, rankings, and a weighted Elo rating engine, authenticating through HRPAuth.', url: 'https://github.com/CoreMatch/MatchCoreArena-Server' },
                                         { name: 'BedwarsRel-MCA', description: 'A BedwarsRel fork that reports finished matches to the rating service, kept compatible with Minecraft 1.8.', url: 'https://github.com/CoreMatch/BedwarsRel-MCA' },
                                         { name: 'MatchCoreArena-Client', description: 'A Wails desktop client with OAuth2 login, rankings, and a friend list.', url: 'https://github.com/CoreMatch/MatchCoreArena-Client' },
                                 ],
@@ -79,7 +80,7 @@ export const projectGroups: ProjectGroup[] = [
                                 projects: [
                                         { name: 'HA-Contract', description: 'API contracts, SDK manifest specs, and drift checks for the HA services.', url: 'https://github.com/CoreMatch/HA-Contract' },
                                         { name: 'Tinyvisor', description: 'A lightweight control panel for scripts and daemon processes, shipped as a single binary with the frontend embedded.', url: 'https://github.com/SamuelCheston/Tinyvisor' },
-                                        { name: 'MatchCoreArena-MaintenanceView', description: 'A desktop operations tool with a rating simulator and data management.', url: 'https://github.com/CoreMatch/MatchCoreArena-MaintenanceView' },
+                                        { name: 'MatchCoreArena-MaintenanceView', description: 'A desktop operations tool with a rating simulator, data management, and live server metrics.', url: 'https://github.com/CoreMatch/MatchCoreArena-MaintenanceView' },
                                         { name: 'BS2HA', description: 'An offline migration tool for moving BlessingSkin data into HRPAuth.', url: 'https://github.com/CoreMatch/BS2HA' },
                                         { name: 'HA-Services-Deployer', description: 'A manifest-driven deployment service for the HA ecosystem.', url: 'https://github.com/CoreMatch/HA-Services-Deployer' },
                                         { name: 'HA-Services-MaintenanceView', description: 'An operations interface for bootstrapping and deploying services.', url: 'https://github.com/CoreMatch/HA-Services-MaintenanceView' },
@@ -90,11 +91,12 @@ export const projectGroups: ProjectGroup[] = [
         {
                 id: 'others',
                 name: 'Others',
-                introduction: 'Documentation and the sites that hold this work together, plus experiments and archived sketches.',
+                introduction: 'Documentation, shared packages, and the sites that hold this work together, plus experiments and archived sketches.',
                 projects: [
                         { name: 'SamuelWiki', description: 'A bilingual knowledge base covering architecture and deployment, built on VitePress.', url: 'https://github.com/SamuelCheston/SamuelWiki' },
                         { name: 'SamuelPortal', description: 'This personal portal and portfolio.', url: 'https://github.com/SamuelCheston/SamuelPortal' },
                         { name: 'MatchCore-Portal', description: 'A bilingual portal for the wider MatchCore ecosystem.', url: 'https://github.com/CoreMatch/MatchCore-Portal' },
+                        { name: 'ha-ui', description: 'The shared design system for the desktop clients: Tailwind v4 tokens and Radix primitives in a dark arena style.', url: 'https://github.com/CoreMatch/ha-ui' },
                         { name: 'SamuelCheston', description: 'A profile repository for identity and licensing.', url: 'https://github.com/SamuelCheston/SamuelCheston' },
                         { name: 'HRPAuth-Wiki', description: 'Bilingual documentation for the authentication ecosystem.', url: 'https://github.com/CoreMatch/HRPAuth-Wiki' },
                         { name: 'AccessibilitiesCore', description: 'An archived Gin service skeleton for accessibility capabilities.', url: 'https://github.com/SamuelCheston/AccessibilitiesCore' },
