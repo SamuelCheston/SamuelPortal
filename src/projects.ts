@@ -24,7 +24,9 @@ export const projectGroups: ProjectGroup[] = [
                 id: 'matchcore',
                 name: 'MatchCore',
                 introduction: 'A connected ecosystem across Minecraft and Rusted Warfare: authentication, matchmaking, and the services around them.',
-                projects: [],
+                projects: [
+                        { name: 'ha-ui', description: 'The shared design system for the desktop clients: Tailwind v4 tokens and Radix primitives in a dark arena style.', url: 'https://github.com/CoreMatch/ha-ui' },
+                ],
                 series: [
                         {
                                 id: 'hrpauth',
@@ -59,7 +61,7 @@ export const projectGroups: ProjectGroup[] = [
                                 introduction: 'Server-side infrastructure for Rusted Warfare: networking, orchestration, and edge routing.',
                                 projects: [
                                         { name: 'Avalon', description: 'A Go game server for Rusted Warfare: gateway, rooms, players, and protocol handling, with game simulation in an external Java helper.', url: 'https://github.com/CoreMatch/Avalon' },
-                                        { name: 'RW-HPS', description: 'The Java engine shell and game data that Avalon runs on — a backup fork of the deleted RW-HPS upstream.', url: 'https://github.com/SamuelCheston/RW-HPS' },
+                                        { name: 'Avalon-Helper', description: 'The Java engine shell and game data that Avalon runs on — the former RW-HPS backup fork, renamed and decoupled after the upstream was deleted.', url: 'https://github.com/CoreMatch/Avalon-Helper' },
                                         { name: 'Cascade', description: 'An edge reverse proxy for Rusted Warfare group servers, routing clients to backends by room code with HRPAuth authentication.', url: 'https://github.com/CoreMatch/Cascade' },
                                 ],
                         },
@@ -96,7 +98,6 @@ export const projectGroups: ProjectGroup[] = [
                         { name: 'SamuelWiki', description: 'A bilingual knowledge base covering architecture and deployment, built on VitePress.', url: 'https://github.com/SamuelCheston/SamuelWiki' },
                         { name: 'SamuelPortal', description: 'This personal portal and portfolio.', url: 'https://github.com/SamuelCheston/SamuelPortal' },
                         { name: 'MatchCore-Portal', description: 'A bilingual portal for the wider MatchCore ecosystem.', url: 'https://github.com/CoreMatch/MatchCore-Portal' },
-                        { name: 'ha-ui', description: 'The shared design system for the desktop clients: Tailwind v4 tokens and Radix primitives in a dark arena style.', url: 'https://github.com/CoreMatch/ha-ui' },
                         { name: 'SamuelCheston', description: 'A profile repository for identity and licensing.', url: 'https://github.com/SamuelCheston/SamuelCheston' },
                         { name: 'HRPAuth-Wiki', description: 'Bilingual documentation for the authentication ecosystem.', url: 'https://github.com/CoreMatch/HRPAuth-Wiki' },
                         { name: 'AccessibilitiesCore', description: 'An archived Gin service skeleton for accessibility capabilities.', url: 'https://github.com/SamuelCheston/AccessibilitiesCore' },
