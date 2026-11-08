@@ -1,4 +1,6 @@
-# Minimal CI: install dependencies and build the Astro site on every push/PR.
+# Minimal CI: install dependencies, build the Astro site, and run the two
+# self-checks (page hygiene on the build output; public reachability of every
+# portfolio URL — tolerant of rate limits/timeouts, fails only on 404).
 name: ci
 
 on:
@@ -24,3 +26,9 @@ jobs:
 
     - name: Build
       run: npm run build
+
+    - name: Check built pages
+      run: node scripts/check-pages.mjs
+
+    - name: Check project URLs
+      run: bash scripts/check-project-urls.sh
