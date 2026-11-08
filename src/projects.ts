@@ -61,7 +61,7 @@ export const projectGroups: ProjectGroup[] = [
                                 introduction: 'Server-side infrastructure for Rusted Warfare: networking, orchestration, and edge routing.',
                                 projects: [
                                         { name: 'Avalon', description: 'A Go game server for Rusted Warfare: gateway, rooms, players, and protocol handling, with game simulation in an external Java helper.', url: 'https://github.com/CoreMatch/Avalon' },
-                                        { name: 'Avalon-Helper', description: 'The Java engine shell and game data that Avalon runs on — the former RW-HPS backup fork, renamed and decoupled after the upstream was deleted.', url: 'https://github.com/CoreMatch/Avalon-Helper' },
+                                        { name: 'Avalon-Helper', description: 'The Java engine shell and game data that Avalon runs on — a former RW-HPS fork, renamed and decoupled.', url: 'https://github.com/CoreMatch/Avalon-Helper' },
                                         { name: 'Cascade', description: 'An edge reverse proxy for Rusted Warfare group servers, routing clients to backends by room code with HRPAuth authentication.', url: 'https://github.com/CoreMatch/Cascade' },
                                 ],
                         },
